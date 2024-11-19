@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #fff;
+  --second-color: #cdcdcd;
+  --second: #9d9d9d;
+  --tertiary-color: #6a0dad;
+  --text-color: #1d1d1d;
+  --black: #000;
+  --test-color: #ff0000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--primary-color);
+}
+
+/* Formularios Edição */
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background: #1d1d1d;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 30%;
+  color: var(--primary-color);
+  display: grid;
+}
+
+fieldset /* Itens do formulario */ {
+  border: 3px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+legend {
+  border: 1px solid #993399;
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  color: black;
+}
+
+.inputBox {
+  position: relative;
+  color: var(--primary-color);
+}
+
+.inputUser /* Texto a cima da linhas */ {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput /* Texto a baixo da linha */ {
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+#data_nascimento {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 10px;
+}
+
+#update {
+  background: var(--tertiary-color);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#update:hover {
+  background-color: var(--tertiary-color);
+}
+
+.buttonVoltar {
+  background: var(--tertiary-color);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer; /* Muda o cursor do mouse quando encosta nele */
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.buttonVoltar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Formulario Cliente e Funcionario */
+
+#submit {
+  background: var(--tertiary-color);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+#submit:hover {
+  background: var(--tertiary-color);
+}

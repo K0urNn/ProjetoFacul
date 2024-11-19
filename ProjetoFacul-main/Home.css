@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #fff;
+  --second-color: #cdcdcd;
+  --tertiary-color: #6a0dad;
+  --text-color: #000;
+  --test-color: #ff0000;
+}
+
+/* Quarto */
+
+section {
+  height: 130vh;
+  padding: 10rem 12% 10rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  font-size: 3.5rem;
+}
+
+.filter {
+  display: grid;
+  border: 3px solid #6a0dad;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.room {
+  border: 5px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+
+.boxCadastro {
+  background: var(--tertiary-color);
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer; /* Muda o cursor do mouse quando encosta nele */
+  margin-top: 1rem;
+  display: inline-block;
+  color: var(--primary-color);
+}
